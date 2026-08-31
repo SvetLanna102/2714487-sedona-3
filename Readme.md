@@ -2,6 +2,7 @@
 
 - Студент: [Савинова Светлана](https://up.htmlacademy.ru/htmlcss-individual/3/user/2714487).
 - Наставник: [Андрей Грачев](https://htmlacademy.ru/profile/angra).
+- Сайт: [Мой проект Седона](https://svetlanna102.github.io/2714487-sedona-3/)
 
 ---
 
