@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
     <header class="header-page">
@@ -49,7 +50,7 @@
             </a>
           </li>
           <li class="breadcrubs-item">
-            <a class="breadcrubs-link" href="#">Гоcтиницы</a>
+            <a class="breadcrubs-link-hotel" href="#">Гоcтиницы</a>
           </li>
         </ul>
       </header>
@@ -109,12 +110,12 @@
             <label for="price-to">до</label>
             <input class="filed" type="number" name="price-to" id="price-to" value="9000">
           </fieldset>
-          <button class="button" type="submit">Применить</button>
+          <button class="button-apply" type="submit">Применить</button>
           <button class="button-reset" type="reset">Сбросить</button>
         </form>
       </section>
       <section class="catalog-hotel">
-        <h2 class="catalog-hotel=title">Найдено гостинец: <span>38</span></h2>
+        <h2 class="catalog-hotel-title">Найдено гостинец: <span>38</span></h2>
         <select class="select-catalog-hotel" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
@@ -207,7 +208,7 @@
         <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
           <label for="subscribe-email">Email</label>
           <input class="field" placeholder="Ваш e-mail" type="email" name="subscribe-email" id="subscribe-email" required>
-          <button class="button subscribe-button" type="submit">Подписаться9</button>
+          <button class="button subscribe-button" type="submit">Подписаться</button>
         </form>
       </section>
     </main>
