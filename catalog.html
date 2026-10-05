@@ -6,39 +6,43 @@
     <link rel="stylesheet" href="styles/styles.css">
   </head>
   <body>
+     <div class="page-container">
     <header class="header-page">
-      <nav class="navigation">
-        <a class="navigation-logo" href="index.html">
-          <img class="header-page-logo" src="images/logo-sedona.svg" alt="Логотип городка Седона">
+      <div class="container-header">
+      <a class="navigation-logo" href="index.html">
+          <img class="header-page-logo" src="images/logo-sedona.svg" width="140" height="70" alt="Логотип городка Седона">
         </a>
+      <nav class="navigation">
+
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navgation-link navgation-link-current" href="#" aria-current="page">Главная</a>
+            <a class="navigation-link navgation-link-current" href="#" aria-current="page">Главная</a>
           </li>
           <li class="navigation-item">
-            <a class="navgation-link" href="#">О Седоне</a>
+            <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navgation-link">Гостиницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
-        <ul class="navigation-list navgation-user">
+        <ul class="navigation-list navigation-user">
           <li class="navigation-item">
-            <a class="navgation-link" href="#">
-              <span class="visually-hidden">Поиск </span>
+            <a class="navigation-link navigation-link-search" href="#">
+              <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navgation-link" href="#">
+            <a class="navigation-link navigation-link-favourites" href="#">
               <span class="visually-hidden">Избранное</span>
               <span class="count">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navgation-link" href="#">Хочу сюда</a>
+            <a class="navigation-link-button" href="#">Хочу сюда!</a>
           </li>
         </ul>
       </nav>
+      </div>
     </header>
     <main class="main-inner">
       <section class="filter-content">
@@ -115,28 +119,30 @@
         </form>
       </section>
       <section class="catalog-hotel">
+        <div class="catalog-hotel-sorting">
           <h2 class="catalog-hotel-title">Найдено гостинец: <span>38</span></h2>
         <select class="select-catalog-hotel" aria-label="Сортировка">
           <option value="cheap">Сначала дешевые</option>
           <option value="expensive">Сначала дорогие</option>
         </select>
-        <li class="view-card-hotel-item">
-          <ul class="view-card-hotel-list">
+        <ul class="view-card-hotel-item">
+          <li class="view-card-hotel-list">
             <a class="" href="catalog.html?view=tile">
               <span class="visually-hidden">Показать карточки</span>
             </a>
-          </ul>
-          <ul class="view-card-hotel-list">
+          </li>
+          <li class="view-card-hotel-list">
             <a class="" href="catalog.html?view=card">
               <span class="visually-hidden">Показать карточки подробнее</span>
             </a>
-          </ul>
-          <ul class="view-card-hotel-list">
+          </li>
+          <li class="view-card-hotel-list">
             <a class="" href="catalog.html?view=list">
               <span class="visually-hidden">Показать список</span>
             </a>
-          </ul>
-        </li>
+          </li>
+        </ul>
+        </div>
         <ul class="card-hotel-list">
           <li class="card-hotel-item">
             <img class="card-hotel-image" src="images/catalog/hotel-1.jpg" width="300" height="212" alt="Вид на ночное небо из ущелья">
@@ -193,7 +199,7 @@
             <a class="pagination-link" href="#">4</a>
           </li>
           <li class="pagination-item">
-            <span>...</span>
+            <span class="ellipsis">...</span>
           </li>
           <li class="pagination-item">
             <a class="pagination-link" href="#">10</a>
@@ -213,30 +219,28 @@
       </section>
     </main>
     <footer class="page-footer">
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">ВКонтакте</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Телеграм</span>
-            </a>
-          </li>
-          <li class="footer-social-item">
-            <a class="button" href="#">
-              <span class="visually-hidden">Ютуб</span>
-            </a>
-          </li>
-        </ul>
-      </section>
-      <section class="footer-contact">
-        <h2 class="visually-hidden">Контакт</h2>
-        <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-      </section>
-      <a class="htmlacademy-link" href="#">.html academy</a>
+      <ul class="footer-social-list">
+        <li class="social-item">
+          <a class="button-social-vk" href="#">
+            <span class="visually-hidden">ВКонтакте</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button-social-telegram" href="#">
+            <span class="visually-hidden">Телеграм</span>
+          </a>
+        </li>
+        <li class="footer-social-item">
+          <a class="button-social-youtube" href="#">
+            <span class="visually-hidden">Ютуб</span>
+          </a>
+        </li>
+      </ul>
+      <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
+      <a class="htmlacademy-link" href="#">
+        <img class="htmlacademy-img" src="images/logo-html-academy.svg" alt="Логотип htmlacademy">
+      </a>
     </footer>
+    </div>
   </body>
 </html>
