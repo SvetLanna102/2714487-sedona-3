@@ -177,6 +177,59 @@
         </a>
       </footer>
     </div>
+    <div class="modal-container modal-container-close">
+      <div class="modal modal-search">
+        <section class="modal-content">
+          <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
+          <button class="modal-close-button">
+            <span class="visually-hidden">Закрыть</span>
+          </button>
+        </section>
+        <form class="form-search-hotel" action="https://echo.htmlacademy.ru/" method="post">
+          <div class="modal-field-group">
+            <div class="input-row">
+              <label class="modal-label" for="arrival-date">Дата Заезда:</label>
+              <div class="input-wrapper">
+                <input class="modal-input" type="text" name="check-in" id="arrival-date" value="27 апреля 2020"
+                  placeholder="Укажите дату" required>
+              </div>
+            </div>
+            <span class="modal-error-text">Мы не можем отправить вас в прошлое.</span>
+          </div>
+          <div class="modal-field-group">
+            <div class="input-row">
+              <label class="modal-label" for="departure-date">Дата Выезда:</label>
+              <div class="input-wrapper">
+                <input class="modal-input" type="text" name="check-out" id="departure-date" value="1 сентября 2023"
+                  placeholder="Укажите дату" required>
+              </div>
+            </div>
+            <span class="modal-success-text">На эти даты есть свободные номера. Пока есть.</span>
+          </div>
+          <div class="modal-counters">
+            <div class="counter-group">
+              <label class="modal-label" for="adults">Взрослые:</label>
+              <div class="counter">
+                <button class="counter-button" type="button">−</button>
+                <input class="counter-input" type="number" name="adults" id="adults" value="2">
+                <button class="counter-button" type="button">+</button>
+              </div>
+            </div>
+            <div class="counter-group">
+              <div class="label-with-tooltip">
+                <label class="modal-label" for="children">Дети:</label>
+              </div>
+              <div class="counter">
+                <button class="counter-button" type="button">−</button>
+                <input class="counter-input" type="number" name="children" id="children" value="2">
+                <button class="counter-button" type="button">+</button>
+              </div>
+            </div>
+          </div>
+          <button class="modal-search-button" type="submit">Найти</button>
+        </form>
+      </div>
+    </div>
   </body>
 
 </html>
