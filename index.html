@@ -2,7 +2,7 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" sizes="32x32" href="favicon.ico">
     <link rel="stylesheet" href="styles/styles.css">
@@ -67,11 +67,11 @@
                   Седона — не аттракцион для туристов, там течёт своя жизнь
                 </p>
               </div>
-              <img class="images-street" src="images/photo-street-sedona .jpg" width="800" height="385"
+              <img class="images-street" src="images/photo-street-sedona.jpg" width="800" height="385"
                 alt="Вид городка Седона">
             </li>
             <li class="advantages-item">
-              <h3 class="advantages-title">Небольшая<br>площадь</h3>
+              <h3 class="advantages-title">Небольшая<br> площадь</h3>
               <p class="advantages-item-description">
                 Все достопримечательности находятся очень близко
               </p>
@@ -90,12 +90,12 @@
             </li>
             <li class="advantages-item-foto advantages-item-foto-reverse">
               <div class="advantages-item-container">
-                <h3 class="advantages-title-foto">Там есть мост дьявола</h3>
+                <h3 class="advantages-title-foto">Там есть<br> мост дьявола</h3>
                 <p class="advantages-item-description-foto">
                   Да, по нему можно пройти! Если вы осмелитесь, разумеется
                 </p>
               </div>
-              <img src="images/photo-devil-bridge.jpg" width="800" height="385" alt="Фото мост дьявола">
+              <img class="images-bridge" src="images/photo-devil-bridge.jpg" width="800" height="385" alt="Фото мост дьявола">
             </li>
           </ul>
         </section>
@@ -110,10 +110,9 @@
           </div>
           <ul class="services-list ">
             <li class="services-item services-item-housing">
-
               <h3 class="services-item-title">ЖИЛЬЕ</h3>
               <p class="services-item-description">
-                Рекомендуем пожить в <br> настоящем мотеле,<br> всё как в кино!
+                Рекомендуем пожить<br> в настоящем мотеле,<br> всё как в кино!
               </p>
             </li>
             <li class="services-item services-item-food">
@@ -146,7 +145,7 @@
           <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
             <label for="subscribe-email" class="visually-hidden">Email</label>
             <input class="subscribe-field" placeholder="Ваш e-mail" type="email" name="subscribe-email"
-              id="subscribe-email" required />
+              id="subscribe-email" required>
             <button class="button subscribe-button" type="submit">
               Подписаться
             </button>
@@ -181,8 +180,7 @@
       <div class="modal modal-search">
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-          <button class="modal-close-button">
-            <span class="visually-hidden">Закрыть</span>
+          <button class="modal-close-button" type="button"><span class="visually-hidden">Закрыть</span>
           </button>
         </section>
         <form class="form-search-hotel" action="https://echo.htmlacademy.ru/" method="post">
@@ -210,19 +208,45 @@
             <div class="counter-group">
               <label class="modal-label" for="adults">Взрослые:</label>
               <div class="counter">
-                <button class="counter-button" type="button">−</button>
+                <button class="counter-button counter-minus" type="button" aria-label="Уменьшить">
+                  <span class="icon-minus"></span>
+                  <span class="visually-hidden">Меньше</span>
+                </button>
                 <input class="counter-input" type="number" name="adults" id="adults" value="2">
-                <button class="counter-button" type="button">+</button>
+                <button class="counter-button counter-plus" type="button" aria-label="Увеличить">
+                  <span class="icon-plus"></span>
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
               </div>
             </div>
-            <div class="counter-group">
+            <div class="counter-group counter-group-tooltip">
               <div class="label-with-tooltip">
-                <label class="modal-label" for="children">Дети:</label>
+                <span class="form-lable form-label-icon">
+                  <label class="modal-label" for="children">Дети:</label>
+                </span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button" aria-labelledby="tooltip-label-date">
+                    <svg class="tooltip-icon" xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="none"
+                      viewBox="0 0 26 26">
+                      <circle cx="13" cy="13" r="13" fill="#83b3d3" />
+                      <path fill="#fff" fill-rule="evenodd" d="M12 7h2v2h-2zm2 12h-2v-9h2z" clip-rule="evenodd" />
+                    </svg>
+                    <span class="visually-hidden">Подсказка</span>
+                  </button>
+                  <span class="tooltip-text" role="tooltip" id="tooltip-label-date">Укажите количество детей, которые
+                    будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.</span>
+                </span>
               </div>
               <div class="counter">
-                <button class="counter-button" type="button">−</button>
+                <button class="counter-button counter-minus" type="button" aria-label="Уменьшить">
+                  <span class="icon-minus"></span>
+                  <span class="visually-hidden">Меньше</span>
+                </button>
                 <input class="counter-input" type="number" name="children" id="children" value="2">
-                <button class="counter-button" type="button">+</button>
+                <button class="counter-button counter-plus" type="button" aria-label="Увеличить">
+                  <span class="icon-plus"></span>
+                  <span class="visually-hidden">Увеличить</span>
+                </button>
               </div>
             </div>
           </div>
@@ -231,5 +255,4 @@
       </div>
     </div>
   </body>
-
 </html>

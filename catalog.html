@@ -2,7 +2,7 @@
 <html lang="ru">
 
   <head>
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
     <link rel="icon" href="favicon.ico" sizes="32x32">
     <link rel="shortcut icon" href="favicon.ico" type="images/x-icon">
@@ -20,13 +20,13 @@
         <nav class="navigation">
           <ul class="navigation-list">
             <li class="navigation-item">
-              <a class="navigation-link navgation-link-current" href="index.html" aria-current="page">Главная</a>
+              <a class="navigation-link" href="index.html" aria-current="page">Главная</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="#">О Седоне</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="catalog.html">Гостиницы</a>
+              <a class="navigation-link navgation-link-current" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
           <ul class="navigation-user">
@@ -94,7 +94,7 @@
               </ul>
             </fieldset>
             <fieldset class="filter-content-group filter-type-housing">
-              <legend class="filter-content-title">Тип жилья</legend>
+              <legend class="filter-content-title">Тип Жилья:</legend>
               <ul class="filter-content-list">
                 <li class="filter-content-item">
                   <label class="control">
@@ -124,12 +124,12 @@
               <div class="range-cost">
                 <label for="price-from" class="catalog-filter-label">
                   <span class="price-filter-text">от</span>
-                  <input class="field-price field-price-from" type="number" name="price-from" id="price-from"
-                    value="0"></label>
+                  <input class="field-price field-price-from" type="number" name="price-from" id="price-from" value="0"
+                    placeholder="0"></label>
                 <label for="price-to" class="catalog-filter-label">
                   <span class="price-filter-text">до</span>
-                  <input class="field-price field-price-to" type="number" name="price-to" id="price-to"
-                    value="9000"></label>
+                  <input class="field-price field-price-to" type="number" name="price-to" id="price-to" value="9000"
+                    placeholder="9000"></label>
               </div>
               <div class="range">
                 <div class="range-scale">
@@ -152,7 +152,7 @@
         </section>
         <section class="catalog-hotel">
           <div class="catalog-hotel-sorting">
-            <h2 class="catalog-hotel-title">Найдено гостинец: <span>38</span></h2>
+            <h2 class="catalog-hotel-title">Найдено гостиниц: <span>38</span></h2>
             <select class="select-catalog-hotel" aria-label="Сортировка">
               <option value="cheap">Сначала дешевые</option>
               <option value="expensive">Сначала дорогие</option>
@@ -187,7 +187,7 @@
               <p class="card-hotel-group">Гостиница</p>
               <p class="card-hotel-price">От 4000 ₽</p>
               <a class="card-hotel-more" href="#">Подробнее</a>
-              <button class="favorites" type="button">В избранное</button>
+              <button class="favorites" type="button" disabled>В избранное</button>
               <p class="stars stars-four">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -204,7 +204,7 @@
               <p class="card-hotel-group">Гостиница</p>
               <p class="card-hotel-price">От 5000 ₽</p>
               <a class="card-hotel-more" href="#">Подробнее</a>
-              <button class="favorites favorites-active" type="button">В избранное</button>
+              <button class="favorites favorites-active" type="button">В избранном</button>
               <p class="stars stars-four">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -297,8 +297,8 @@
           </li>
         </ul>
         <a class="contacts-phone" href="tel:88128121212">+7 (812) 812-12-12</a>
-        <a class="htmlacademy-link" href="#">
-          <img class="htmlacademy-img" src="images/logo-html-academy.svg" alt="Логотип htmlacademy">
+        <a class="htmlacademy-link" href="https://htmlacademy.ru/">
+          <span class="visually-hidden">"Логотип HTML academy"</span>
         </a>
       </footer>
     </div>
