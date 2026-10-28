@@ -12,7 +12,7 @@
 
   <body>
     <div class="page-container">
-      <header class="header-page">
+      <header data-test="header" class="header-page">
         <a class="navigation-logo" href="index.html">
           <img class="header-page-logo" src="images/logo-sedona.svg" width="140" height="70"
             alt="Логотип городка Седона">
@@ -48,8 +48,8 @@
         </nav>
 
       </header>
-      <main class="main-inner">
-        <section class="filter-content">
+      <main data-test="main" class="main-inner">
+        <section data-test="filter" class="filter-content">
           <header class="inner-header">
             <h1 class="inner-header-title">Гостиницы Седоны</h1>
             <ul class="breadcrumbs">
@@ -131,18 +131,18 @@
                   <input class="field-price field-price-to" type="number" name="price-to" id="price-to" value="9000"
                     placeholder="9000"></label>
               </div>
-              <div class="range">
-                <div class="range-scale">
-                  <div class="range-bar" style="left: 0; width: 226px;">
-                    <button type="button" class="range-toggle toggle-min">
-                      <span class="visually-hidden">Изменить минимальную цену</span>
-                    </button>
-                    <button type="button" class="range-toggle toggle-max">
-                      <span class="visually-hidden">Изменить максимальную цену</span>
-                    </button>
-                  </div>
+
+              <div class="range-scale">
+                <div class="range-bar" style="left: 0; width: 226px;">
+                  <button type="button" class="range-toggle toggle-min">
+                    <span class="visually-hidden">Изменить минимальную цену</span>
+                  </button>
+                  <button type="button" class="range-toggle toggle-max">
+                    <span class="visually-hidden">Изменить максимальную цену</span>
+                  </button>
                 </div>
               </div>
+
             </fieldset>
             <div class="filter-content-button">
               <button class="button-apply" type="submit">Применить</button>
@@ -150,7 +150,7 @@
             </div>
           </form>
         </section>
-        <section class="catalog-hotel">
+        <section data-test="catalog" class="catalog-hotel">
           <div class="catalog-hotel-sorting">
             <h2 class="catalog-hotel-title">Найдено гостиниц: <span>38</span></h2>
             <select class="select-catalog-hotel" aria-label="Сортировка">
@@ -187,7 +187,7 @@
               <p class="card-hotel-group">Гостиница</p>
               <p class="card-hotel-price">От 4000 ₽</p>
               <a class="card-hotel-more" href="#">Подробнее</a>
-              <button class="favorites" type="button" disabled>В избранное</button>
+              <button class="favorites" type="button">В избранное</button>
               <p class="stars stars-four">
                 <span class="visually-hidden">4 звезды</span>
               </p>
@@ -264,7 +264,7 @@
             </li>
           </ul>
         </section>
-        <section class="subscribe-catalog">
+        <section data-test="subscribe" class="subscribe-catalog">
           <h2 class="subscribe-title-catalog">Подпишитесь на рассылку</h2>
           <p class="subscribe-description">
             Только полезная информация и никакого спама,<br> честное бойскаутское!
@@ -278,7 +278,7 @@
         </section>
       </main>
 
-      <footer class="page-footer">
+      <footer data-test="footer" class="page-footer">
         <ul class="footer-social-list">
           <li class="social-item">
             <a class="button-social-vk" href="#">
