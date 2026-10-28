@@ -612,7 +612,7 @@ html {
 }
 
 .subscribe-field:disabled {
-cursor: not-allowed;
+  cursor: not-allowed;
 }
 
 .button-search:disabled,
@@ -865,7 +865,7 @@ cursor: not-allowed;
   background-size: contain;
 }
 
-.control:hover  .control-mark {
+.control:hover .control-mark {
   background-color: rgba(255, 255, 255, 0.6);
   border-color: rgba(255, 255, 255, 0.6)
 }
@@ -1170,7 +1170,7 @@ cursor: not-allowed;
 
 .button-apply:focus-visible {
   background-color: #68a2ca;
-    color: #ffffff;
+  color: #ffffff;
   outline: none;
 }
 
@@ -1189,7 +1189,7 @@ cursor: not-allowed;
 
 .button-reset:focus-visible {
   border: 3px solid #83b3d3;
- outline: none;
+  outline: none;
 }
 
 .button-reset:active {
@@ -1496,7 +1496,7 @@ cursor: not-allowed;
   background: #e5e5e5;
 }
 
-.modal-close-button:focus-visible{
+.modal-close-button:focus-visible {
   border: 3px solid #83b3d3;
   background: #e5e5e5;
   outline: none;
@@ -1507,7 +1507,7 @@ cursor: not-allowed;
 }
 
 .modal-close-button:active::before {
- opacity: 0.4;
+  opacity: 0.4;
 }
 
 .form-search-hotel {
@@ -1582,7 +1582,7 @@ cursor: not-allowed;
   font-size: 16px;
   line-height: 21px;
   font-weight: 400;
-  margin: 0 70px 0 137px;
+  margin: 0 auto 0 137px;
   padding-left: 20px;
   min-width: 320px;
 }
@@ -1604,7 +1604,7 @@ cursor: not-allowed;
   width: 247px;
 }
 
-.counter-group-tooltip{
+.counter-group-tooltip {
   width: 242px;
 }
 
@@ -1666,7 +1666,7 @@ cursor: not-allowed;
   background-color: #000000;
 }
 
-.counter-button:focus-visible  {
+.counter-button:focus-visible {
   outline: 3px solid #82b3d3;
   border-radius: 4px;
   outline-offset: 2px;
